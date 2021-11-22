@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Desarrollo, WEB, HTML, APLICACIONES, TECNOLOGIA">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Digital Solutions</title>
+    <meta name="description" content="Desarrollo de aplicaciones y sitios Web. Somos profesionales capacitados y con varios años de experiencia que brindamos nuestros servicios para llevar tu negocio al Siglo XXI."> 
+</head>
+<body>
+    <header>
+      <button onclick="ingreso()" class="botonIngreso">Ingresar</button>
+      <button onclick="registro()" class="botonIngreso">Registrarse</button>
+      
+      <form action="" id="ingresoUsuario"></form>
+      <form action="" id="registroUsuario"></form>
+
+
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-xxl menu">
+          <button class="navbar-toggler colorBoton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 15px;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="Images/image2vector.svg" alt="Logo" class="logo"></a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a  href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a  href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a href="galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a  href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header> 
+    <main>
+      <div class="container">
+        <div class="row">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/Main.png" class="d-block w-100 imagenFondoRelleno" alt="Main 1">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/fondo2.png" class="d-block w-100 imagenFondoRelleno" alt="Main 2">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/fondo 3.png" class="d-block w-100 imagenFondoRelleno" alt="Main 3">
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="container-xxl">
+        <div class="row">
+          <h2 class="textoMainTitulo">Quienes somos?</h2>
+          <p class="textoMainParrafo">
+              Somos un equipo de especialistas en tecnología altamente capacitados. Buscamos trabajar junto a vos para potenciar tus proyecto.
+              Nos especializamos en crear experiencias digitales de alta calidad que facilitan el crecimiento de tu empresa.
+              Buscamos desarrollar sitios web y aplicaciones que le aporten un valor agregado a tu empresa y que tengan un impacto significativo en su entorno.
+              Excelencia en el diseño y desarrollo de software para construir el futuro. Lográ tus objetivos. Reducí costos. Acelerá el crecimiento.
+              Realizá el viaje hacia la transformación digital de tu empresa.Construí tu futuro junto a nosotros.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div>
+            <div class="formularioEmail">
+                <form>
+                    <p class="formularioEmailTexto">Recibi las mejores ofertas :</p>
+                    <input type="text" name="" id="" placeholder="Tu email" class="formularioEmailInput">
+                    <input type="submit" class="formularioEmailButton">
+                </form>
+            </div>
+            <div class="contacto">
+                <div class="mediosDePago">    
+                    <h4 >Medios de pago</h4>
+                    <div>
+                      <img src="Images/Visa_Inc._logo.svg" alt="Visa" class="icono__MD">
+                      <img src="Images/MasterCard_Logo.svg.png" alt="Mastercard" class="icono__MD">
+                    </div>
+                    <div>
+                      <img src="Images/196539.png" alt="American" class="icono__MD">
+                      <img src="Images/paypal-logo-preview.png" alt="paypal" class="icono__MD">
+                    </div>
+
+                </div>
+                
+                <div class="mediosDeContacto">
+                    <h4>Contacto</h4>
+                    <p>
+                        Mail: digitalsolutions@gmail.com 
+                    </p>
+                    <p>
+                        Telefono: 15548752149 
+                    </p>
+                    <p>
+                        Direccion: Suipacha 800, Capital Federal 
+                    </p>
+                </div>
+                <div class="redesSociales">
+                    <h4>Seguinos</h4>
+                    <div>                    
+                      <a href="https://twitter.com/DSolution2021"><img src="Images/twitter-6.svg" alt="Twitter" class="icono__SM"></a>
+                      <a href="https://www.instagram.com/digitalsolutionsxxi/"><img src="Images/Insta.png" alt="Instagram" class="icono__SM"></a>
+                      <a href="https://www.facebook.com/profile.php?id=100073677829518"><img src="Images/face.png" alt="Facebook" class="icono__SM"></a>
+                    </div>  
+                </div>
+            </div>
+        </div>  
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

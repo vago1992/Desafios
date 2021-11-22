@@ -1,0 +1,466 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #030303; }
+
+.logo {
+  height: 100%;
+  width: 190px;
+  margin-bottom: 0px;
+  mix-blend-mode: multiply;
+  filter: brightness(1, 1); }
+
+.colorBoton {
+  background-color: #eeee06; }
+
+.menu {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: larger;
+  list-style: none;
+  margin-bottom: 2px;
+  background-color: #eeee06;
+  height: 48px; }
+
+nav a {
+  color: #030303;
+  text-decoration: none; }
+
+nav li {
+  padding-left: 125px; }
+
+.imagenFondoRelleno {
+  width: 100%;
+  height: 550px; }
+
+.textoMainTitulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  color: #eeee06;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.textoMainParrafo {
+  font-weight: bolder;
+  text-align: justify;
+  line-height: 1.5;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  grid-area: footer;
+  height: 90%;
+  width: 99%; }
+
+.formularioEmail {
+  background-color: #eeee06;
+  border: 1px solid black;
+  height: 70px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.formularioEmailTexto {
+  color: #030303;
+  font-weight: bolder;
+  font-size: large;
+  display: inline-block;
+  margin-top: 20px;
+  justify-content: center; }
+
+.formularioEmailInput {
+  width: 45%;
+  height: 20px; }
+
+.formularioEmailButton {
+  width: 36px;
+  height: 20px;
+  font-weight: bolder;
+  font-size: 11px;
+  position: absolute;
+  margin-top: 23px; }
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  display: inline-block;
+  font-size: 20px;
+  color: #eeee06; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  color: white; }
+
+.contacto {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 32% 35% 32%;
+  grid-template-rows: 40px  25px  25px 25px;
+  grid-template-areas: "Pago  direccion   contacto" "Pago  direccion   contacto" "Pago  direccion   contacto" "Pago  direccion   contacto"; }
+
+.mediosDePago {
+  grid-area: Pago;
+  margin-left: 15%; }
+  .mediosDePago div {
+    padding-left: 15px; }
+
+.mediosDeContacto {
+  grid-area: direccion;
+  margin-left: 25%; }
+  .mediosDeContacto h4 {
+    padding-left: 35px; }
+  .mediosDeContacto p {
+    margin-top: 5px; }
+
+.redesSociales {
+  grid-area: contacto;
+  margin-left: 49%; }
+  .redesSociales h4 {
+    padding-left: 15px; }
+
+.botonIngreso {
+  width: 60px;
+  height: 20px;
+  font-weight: bolder;
+  font-size: 11px;
+  margin-top: 5px;
+  margin-left: 1200px; }
+
+.icono__SM {
+  height: 40px;
+  width: 40px;
+  margin-top: 15px; }
+
+.icono__MD {
+  height: 50px;
+  width: 65px;
+  margin-top: 2px; }
+
+.perfil {
+  display: grid;
+  border: 2px solid black;
+  background-image: linear-gradient(black, #292929);
+  margin-bottom: 5px;
+  margin-left: 2%;
+  height: 265px;
+  width: 95%;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 40% 60%;
+  grid-template-areas: "foto nombre" "foto texto"; }
+
+.perfil__Medio {
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "nombre foto" "texto foto"; }
+
+.perfilFoto {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  grid-area: foto; }
+
+.perfilTitulo {
+  color: #eeee06;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 40%;
+  margin-top: 65px;
+  grid-area: nombre; }
+
+.perfilTexto {
+  text-align: justify;
+  margin-left: 5%;
+  grid-area: texto;
+  width: 90%; }
+
+.perfilTitulo__Servicios {
+  color: #eeee06;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 30%;
+  margin-top: 40px;
+  grid-area: nombre; }
+
+.perfilTitulo__Servicios2 {
+  color: #eeee06;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 35%;
+  margin-top: 40px;
+  grid-area: nombre; }
+
+.galeriaFoto {
+  width: 100%;
+  height: 230px;
+  margin-bottom: 10px;
+  border: 1px solid black; }
+
+.animacionGaleria {
+  transition: height 2s, width 0s; }
+
+.animacionGaleria:hover {
+  height: 451px;
+  width: 650px;
+  transform: scale(1, 1);
+  animation-iteration-count: static; }
+
+.contactoTitulo {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #eeee06;
+  font-size: 40px;
+  margin-bottom: 5px; }
+
+.formParrafo {
+  font-weight: 600; }
+
+fieldset {
+  border: solid black 1px;
+  background-image: linear-gradient(black, #222222); }
+
+legend {
+  font-size: 20px; }
+
+.contactoTexto {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white; }
+
+.mapa {
+  height: 400px;
+  width: 600px;
+  border: line solid black; }
+
+@media only screen and (max-width: 1024px) {
+  .menu {
+    height: 100%; }
+  nav li {
+    padding-left: 85px; } }
+
+@media only screen and (max-width: 990px) {
+  .perfil {
+    margin-bottom: 5px;
+    margin-left: 8%;
+    height: 185px;
+    width: 88%;
+    grid-template-columns: 35% 43%;
+    grid-template-rows: 50px 100px; }
+  .perfil__Medio {
+    grid-template-columns: 43% 35%; }
+  .perfilFoto__Media {
+    margin-left: 30%; }
+  .perfilTitulo {
+    margin-left: 55%;
+    margin-top: 15px;
+    font-size: 17px; }
+  .perfilTitulo__Servicios {
+    margin-left: 40%;
+    margin-top: 15px;
+    font-size: 17px; }
+  .perfilTitulo__Servicios2 {
+    margin-left: 55%;
+    margin-top: 15px;
+    font-size: 17px; }
+  .perfilTitulo__Medio {
+    margin-left: 30%; }
+  .perfilTexto {
+    font-size: 10px;
+    margin-left: 30%; }
+  .perfilTexto__Medio {
+    margin-left: 5%; }
+  .mapa {
+    height: 350px;
+    width: 410px; } }
+
+@media only screen and (max-width: 768px) {
+  .perfil {
+    height: 185px; }
+  .perfilTexto {
+    font-size: 8px;
+    margin-left: 80px; }
+  .perfilTexto__Medio {
+    margin-left: 20px; }
+  .perfilFoto {
+    margin-left: 30px;
+    margin-top: 20px; }
+  .perfilFoto__Media {
+    margin-left: 50px; }
+  .perfilTitulo {
+    margin-left: 50%; }
+  .perfilTitulo__Servicios {
+    font-size: 14px;
+    margin-left: 55%; }
+  .perfilTitulo__Servicios2 {
+    font-size: 14px;
+    margin-left: 65%; }
+  .perfilTitulo__Medio {
+    margin-left: 30%; }
+  .contacto h4 {
+    font-size: 16px; }
+  .contacto p {
+    font-size: 12px; }
+  .animacionGaleria:hover {
+    height: 250px;
+    width: 450px; }
+  .mapa {
+    height: 250px;
+    width: 270px;
+    margin-top: 90px; }
+  .contactoTitulo {
+    font-size: 25px; }
+  .formParrafo {
+    font-size: 12px; } }
+
+@media only screen and (max-width: 550px) {
+  .perfil {
+    height: 220px; }
+  .contacto h4 {
+    font-size: 13px; }
+  .contacto p {
+    font-size: 9px; }
+  .formularioEmail {
+    height: 35px;
+    width: 100%; }
+  .formularioEmailTexto {
+    font-size: 12px;
+    margin-top: 15px; }
+  .formularioEmailInput {
+    width: 45%;
+    height: 16px; }
+  .formularioEmailButton {
+    width: 28px;
+    height: 15px;
+    font-size: 8px;
+    margin-top: 15px; }
+  .perfilTitulo__Servicios {
+    font-size: 12px; }
+  .perfilTitulo__Servicios2 {
+    font-size: 12px; }
+  .perfilTexto {
+    font-size: 8px; }
+  .galeriaFoto {
+    height: 55px; }
+  .perfilFoto {
+    height: 120px;
+    margin-top: 50px; }
+  .perfilTitulo {
+    font-size: 14px;
+    margin-left: 70%; }
+  .perfilTitulo__Medio {
+    margin-left: 30%; }
+  .icono__SM {
+    height: 20px;
+    width: 20px;
+    margin-top: 7px; }
+  .icono__MD {
+    height: 25px;
+    width: 32px;
+    margin-top: 0px; }
+  .animacionGaleria:hover {
+    height: 250px;
+    width: 350px; }
+  .mapa {
+    height: 140px;
+    width: 170px;
+    margin-top: 70px; }
+  .contactoTitulo {
+    font-size: 20px; }
+  .formParrafo {
+    font-size: 10px; }
+    .formParrafo legend {
+      font-size: 18px; } }
+
+@media only screen and (max-width: 425px) {
+  .imagenFondoRelleno {
+    height: 340px; }
+  .perfil {
+    height: 165px;
+    width: 350px;
+    margin-left: 20px;
+    grid-template-columns: 46% 54%;
+    grid-template-rows: 50px 100px; }
+  .perfilFoto {
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 5px; }
+  .perfilFoto__Media {
+    margin-left: 25px; }
+  .perfilTexto {
+    font-size: 7px;
+    margin-left: 10px; }
+  .perfilTitulo {
+    font-size: 11px;
+    margin-left: 30%; }
+  .perfilTitulo__Servicios {
+    font-size: 11px;
+    margin-left: 20%; }
+  .perfilTitulo__Servicios2 {
+    font-size: 12px;
+    margin-left: 25%; }
+  .formularioEmail {
+    height: 30px;
+    width: 100%; }
+  .formularioEmailTexto {
+    font-size: 11px;
+    font-weight: bolder; }
+  .formularioEmailInput {
+    width: 45%;
+    height: 15px; }
+  .formularioEmailButton {
+    width: 24px;
+    height: 12px;
+    font-size: 7px; }
+  .textoMainTitulo {
+    font-size: 30px;
+    margin-top: 0px; }
+  .textoMainParrafo {
+    font-size: 8px; }
+  .contacto h4 {
+    font-size: 10px; }
+  .contacto p {
+    font-size: 7px; }
+  .logo {
+    width: 90px; }
+  li {
+    font-size: 15px; }
+  .sizeButton {
+    height: 25px;
+    width: 35px;
+    padding-right: 0px; }
+  .animacionGaleria:hover {
+    height: 150px;
+    width: 250px; }
+  .mapa {
+    height: 120px;
+    width: 150px; }
+  .contactoTitulo {
+    font-size: 18px; }
+  .formParrafo {
+    font-size: 9px; }
+    .formParrafo legend {
+      font-size: 16px; } }
+
+@media only screen and (max-width: 375px) {
+  .contacto h4 {
+    font-size: 9px; }
+  .contacto p {
+    font-size: 6px; }
+  .perfil {
+    height: 175px;
+    width: 327px; }
+  .mapa {
+    height: 110px;
+    width: 125px; }
+  .perfil {
+    margin-left: 3px; } }
+
+@media only screen and (max-width: 340px) {
+  .mapa {
+    height: 100px;
+    width: 110px; } }
