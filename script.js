@@ -1,41 +1,51 @@
-function registro(){
+let botonRegistro= document.getElementById("botonRegistro");
+
+botonRegistro.addEventListener("click", function(){
     let registrar= document.getElementById("registroUsuario");
-    registrar.innerHTML=`<input type="text" name="texto" value="" placeholder="Nombre de Usuario">
-                        <input type="text" name="texto" value="" placeholder="Contraseña">
-                        <input type="button" name="enviar" value="Enviar" onclick="guardarDatos();">`;
-}
-function ingreso(){
+    registrar.innerHTML=`<input type="text"  id="usuario" placeholder="Nombre de Usuario">
+                        <input type="text"  id="pass" placeholder="Contraseña">
+                        <input type="button" id="registroForm" value="Enviar">`;
+    
+    let registroForm=document.getElementById("registroForm");
+    registroForm.addEventListener("click", e=>{
+        e.preventDefault();
+        let nuevoUsuario=document.getElementById("usuario");
+        let nuevaPass=document.getElementById("pass");
+        let nuevoUsuarioJSON=JSON.stringify(nuevoUsuario.value);
+        let nuevaPassJSON=JSON.stringify(nuevaPass.value);
+        sessionStorage.setItem(nuevoUsuarioJSON, nuevaPassJSON);
+})
+})
+let botonIngreso= document.getElementById("botonIngreso");
+
+botonIngreso.addEventListener("click",function(){
     let registrar= document.getElementById("ingresoUsuario");
-    registrar.innerHTML=`<input type="text" name="texto" value="" placeholder="Nombre de Usuario">
-                        <input type="text" name="texto" value="" placeholder="Contraseña">
-                        <input type="button" name="enviar" value="Enviar" onclick="validar();">`;
-}
-function validar(){
-    let Usuario=document.getElementsByName('texto')[0].value;
-    let Pass=document.getElementsByName('texto')[1].value;
-    let usuarioJSON=JSON.stringify(Usuario);
-    let passJSON=JSON.stringify(Pass);
+    registrar.innerHTML=`<input type="text" id="user" placeholder="Nombre de Usuario">
+                        <input type="text" id="password" placeholder="Contraseña">
+                        <input type="button" id="ingresoForm"value="Enviar">`;
+    let validar=document.getElementById("ingresoForm");
+    validar.addEventListener("click", e=>{
+        let usuario=document.getElementById("user");
+        let pass=document.getElementById("password");
+        let usuarioJSON=JSON.stringify(usuario.value);
+        let passJSON=JSON.stringify(pass.value);
 
-    for (let i=0;i<sessionStorage.length;i++ ){
-        let usuarioReg=sessionStorage.key(i);
-        let passReg=sessionStorage.getItem(usuarioReg);
+        for (let i=0;i<sessionStorage.length;i++ ){
+            let usuarioReg=sessionStorage.key(i);
+            let passReg=sessionStorage.getItem(usuarioReg);
 
-        if (usuarioJSON==usuarioReg && passJSON==passReg){
-            return alert ("Bienvenido");
+            if (usuarioJSON==usuarioReg && passJSON==passReg){
+                return alert ("Bienvenido");
             
+            }
         }
-    }
-    alert ("Usuario o contraseña equivocada vuelva a intentarlo");
-}
+        alert ("Usuario o contraseña equivocada vuelva a intentarlo");
+    })
+})
 
-function guardarDatos(){
 
-    let nuevoUsuario=document.getElementsByName('texto')[0].value;
-    let nuevaPass=document.getElementsByName('texto')[1].value;
-    let nuevoUsuarioJSON=JSON.stringify(nuevoUsuario);
-    let nuevaPassJSON=JSON.stringify(nuevaPass);
-    sessionStorage.setItem(nuevoUsuarioJSON, nuevaPassJSON);
-}
+    
+
 
 
 
