@@ -22,13 +22,14 @@ botonIngreso.addEventListener("click",function(){
     let registrar= document.getElementById("ingresoUsuario");
     registrar.innerHTML=`<input type="text" id="user" placeholder="Nombre de Usuario">
                         <input type="text" id="password" placeholder="Contraseña">
-                        <input type="button" id="ingresoForm"value="Enviar">`;
+                        <input type="button" id="ingresoForm" value="Enviar">`;
     let validar=document.getElementById("ingresoForm");
     validar.addEventListener("click", e=>{
         let usuario=document.getElementById("user");
         let pass=document.getElementById("password");
         let usuarioJSON=JSON.stringify(usuario.value);
         let passJSON=JSON.stringify(pass.value);
+
 
         for (let i=0;i<sessionStorage.length;i++ ){
             let usuarioReg=sessionStorage.key(i);
@@ -42,6 +43,17 @@ botonIngreso.addEventListener("click",function(){
         alert ("Usuario o contraseña equivocada vuelva a intentarlo");
     })
 })
+
+$("#botonIngreso").on("click",function(){
+    $("#ingresoUsuario").toggle();
+    $("#registroUsuario").hide();
+})
+$("#botonRegistro").on("click",function(){
+    $("#registroUsuario").toggle();
+    $("#ingresoUsuario").hide();
+})
+
+
 
 
     
