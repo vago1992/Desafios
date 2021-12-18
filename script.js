@@ -46,11 +46,9 @@ botonIngreso.addEventListener("click",function(){
 
 $("#botonIngreso").on("click",function(){
     $("#ingresoUsuario").toggle();
-    $("#registroUsuario").hide();
 })
 $("#botonRegistro").on("click",function(){
     $("#registroUsuario").toggle();
-    $("#ingresoUsuario").hide();
 })
 
 
