@@ -105,7 +105,10 @@ p {
   width: 100%;
   grid-template-columns: 32% 35% 32%;
   grid-template-rows: 40px  25px  25px 25px;
-  grid-template-areas: "Pago  direccion   contacto" "Pago  direccion   contacto" "Pago  direccion   contacto" "Pago  direccion   contacto"; }
+  grid-template-areas: "Pago  direccion   contacto"
+ "Pago  direccion   contacto"
+ "Pago  direccion   contacto"
+ "Pago  direccion   contacto"; }
 
 .mediosDePago {
   grid-area: Pago;
@@ -155,11 +158,13 @@ p {
   width: 95%;
   grid-template-columns: 40% 60%;
   grid-template-rows: 40% 60%;
-  grid-template-areas: "foto nombre" "foto texto"; }
+  grid-template-areas: "foto nombre"
+ "foto texto"; }
 
 .perfil__Medio {
   grid-template-columns: 60% 40%;
-  grid-template-areas: "nombre foto" "texto foto"; }
+  grid-template-areas: "nombre foto"
+ "texto foto"; }
 
 .perfilFoto {
   width: 100%;
@@ -236,6 +241,19 @@ legend {
   height: 400px;
   width: 600px;
   border: line solid black; }
+
+.clima{
+  position: absolute;
+}
+.clima h6{
+  color: yellow;
+  margin-left: 150px;
+  
+}
+.clima p{
+  margin-left: 5px;
+  color: #eeee06;
+}
 
 @media only screen and (max-width: 1024px) {
   .menu {
