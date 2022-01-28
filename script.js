@@ -1,3 +1,9 @@
+class usuario{
+    constructor(user,pass){
+        this.user=user;
+        this.pass=pass;
+    }
+}
 let botonRegistro= document.getElementById("botonRegistro");
 
 botonRegistro.addEventListener("click", function(){
@@ -13,7 +19,8 @@ botonRegistro.addEventListener("click", function(){
         let nuevaPass=document.getElementById("pass");
         let nuevoUsuarioJSON=JSON.stringify(nuevoUsuario.value);
         let nuevaPassJSON=JSON.stringify(nuevaPass.value);
-        sessionStorage.setItem(nuevoUsuarioJSON, nuevaPassJSON);
+        let user =new usuario(nuevoUsuarioJSON,nuevaPassJSON,)
+        sessionStorage.setItem(user.user, user.pass);
 })
 })
 let botonIngreso= document.getElementById("botonIngreso");
@@ -55,10 +62,13 @@ $("#botonRegistro").click(function(){
     $("#registroUsuario").slideToggle(1200);
     $("#ingresoUsuario").slideUp();
 })
+let locacion=navigator.geolocation.getCurrentPosition(mostrarUbicacion);
 
-let urlClima= ("http://api.openweathermap.org/data/2.5/weather?lat=-34.4940625&lon=-58.5429665&appid=d950eb83df611b17e8a4cbd7741e1681");
-
-$.get(urlClima, function(respuesta){
+function mostrarUbicacion(posicion){
+   let latitud=posicion.coords.latitude;
+   let longitud=posicion.coords.longitude;
+   let urlClima=`http://api.openweathermap.org/data/2.5/weather?lat=${latitud}&lon=${longitud}&appid=d950eb83df611b17e8a4cbd7741e1681`
+   $.get(urlClima, function(respuesta){
     console.log(respuesta);
     let contenido=`<div>
                         <h6>${respuesta.name}</h6>
@@ -68,6 +78,14 @@ $.get(urlClima, function(respuesta){
 
     $("#clima").append(contenido);
 })
+
+}
+
+
+
+
+
+
 
 
 
